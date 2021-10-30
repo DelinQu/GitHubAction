@@ -34,4 +34,4 @@ def getArg(argv):
 
 if __name__ == "__main__":
     print(asciiText)
-    print(getArg())
+    print(getArg(sys.argv[1:]))
