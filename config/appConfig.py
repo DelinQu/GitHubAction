@@ -5,7 +5,7 @@ loginUrl = 'https://fangkong.hnu.edu.cn/api/v1/account/login'
 commitUrl= 'https://fangkong.hnu.edu.cn/api/v1/clockinlog/add' 
 
 # path
-dirPath  = './data/.img/'
+dirPath  = './data/.img'
 
 # 邮箱配置
 senderEmail = 'qdl.no-reply@foxmail.com'

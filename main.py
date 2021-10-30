@@ -32,7 +32,7 @@ def check(username,passwd,RealAddress,RealCity,RealCounty,RealProvince,BackState
     print(response)
     return response['code']
 
-# 循环打卡作业 [这里重用了master中的代码，由于github action secrity有限的缘故，只能打卡单个用户]
+# 打卡作业
 def check_Job():
     cur = time.strftime("%Y-%m-%d %H:%M:%S",time.localtime(time.time()))
     print("----------[log] : "+cur)
