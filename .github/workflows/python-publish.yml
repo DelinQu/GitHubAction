@@ -24,4 +24,4 @@ jobs:
       
     - name: check
       run: |
-        python main.py -username ${{ secrets.YOUR_USERNAME }} -passwd ${{ secrets.YOUR_PASSWD }} -email ${{ secrets.YOUR_EMAIL }}
+        python main.py -u ${{ secrets.YOUR_USERNAME }} -p ${{ secrets.YOUR_PASSWD }} -e ${{ secrets.YOUR_EMAIL }}
