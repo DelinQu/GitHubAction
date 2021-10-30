@@ -1,1 +1,2 @@
-numpy==1.21.2
+requests==2.22.0
+sendmail==2.0

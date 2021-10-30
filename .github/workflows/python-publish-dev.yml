@@ -2,9 +2,9 @@ name: Health Check Action
 
 on:
   push:
-    branches: [master]
+    branches: [dev]
   pull_request:
-    branches: [master]
+    branches: [dev]
 
 jobs:
   deploy:
@@ -23,5 +23,9 @@ jobs:
         pip install -r requirements.txt
       
     - name: check
-      run: |
-        python main.py -u ${{ secrets.YOUR_USERNAME }} -p ${{ secrets.YOUR_PASSWD }} -e ${{ secrets.YOUR_EMAIL }}
+      env: 
+        USERNAME: ${{ secrets.YOUR_USERNAME }}
+        PASSWD: ${{ secrets.YOUR_PASSWD }}
+        EMAIL: ${{ secrets.YOUR_EMAIL }}
+      run: python main.py
+
