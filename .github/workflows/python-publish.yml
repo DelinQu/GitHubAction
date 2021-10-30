@@ -23,7 +23,5 @@ jobs:
         pip install -r requirements.txt
       
     - name: check
-      run: python main.py
-#       with:
-#         username: __token__
-#         password: ${{ secrets.PYPI_API_TOKEN }}
+      run: |
+        python main.py -username ${{ secrets.YOUR_USERNAME }} -passwd ${{ secrets.YOUR_PASSWD }} -email ${{ secrets.YOUR_EMAIL }}
